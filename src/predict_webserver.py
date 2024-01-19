@@ -107,17 +107,17 @@ python src/predict_webserver.py \
         help="Directory with AF2 PDBs",
         type=lambda x: is_valid_path(p, x),
     )
-
+#modify this path#
     p.add_argument(
         "--out_dir",
-        default="output/",
+        default="Discotope-seba/output/",
         required=True,
         help="Job output directory",
     )
-
+#modify this path#
     p.add_argument(
         "--models_dir",
-        default="models/",
+        default="Discotope-seba/models/",
         help="Path for .json files containing trained XGBoost ensemble",
         type=lambda x: is_valid_path(p, x),
     )
